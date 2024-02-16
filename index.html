@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <h1>Box Model</h1>
+        <p>
+            cada elemento que definimos en un documento HTML se mostrará en el navegador como una caja rectangular esta
+            es la forma en que se representan todos los elementos
+        </p>
+        <p>Ejmplo: box-sizing: border-box;</p>
+        <div class="caja">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam in dolores placeat suscipit aspernatur expedita
+            voluptates exercitationem eius fugit mollitia, voluptatum maxime blanditiis vero, dignissimos nisi facilis
+            praesentium voluptatibus architecto.
+        </div>
+    </div>
+    <div>
+        <h2>Padding</h2>
+        <p>Establece el área de relleno en los cuatro lados de un elemento a la vez.
+            Se puede especificar utilizando uno, dos, tres o cuatro valores. Cada valor es una longitud o un porcentaje.
+            Los
+            valores negativos no son válidos.
+        </p>
+        <p>
+            ejemplo: padding: 10px;
+        </p>
+        <div class="caja1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis ipsum amet quidem odio mollitia inventore
+            vel corporis atque nobis soluta. Odio eligendi sunt vitae odit deleniti similique blanditiis, voluptatem
+            ullam.
+        </div>
+    </div>
+    <div>
+        <h2>Border</h2>
+        <p>La propiedad border permite definir en una única regla todos los bordes de los elementos seleccionados. Se
+            puede
+            utilizar border para definir el o los valores siguientes: border-width , border-style , border-color</p>
+        <p>
+            ejemplo: border: 2px solid red;
+        </p>
+        <div class="caja3">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, maxime distinctio. Aperiam, id unde
+            perferendis laborum doloremque obcaecati provident, quos eveniet nesciunt quo voluptates natus? Dolorem
+            illum quae consequuntur saepe.
+        </div>
+    </div>
+    <div>
+        <h2>Margin</h2>
+        <p>
+            Margin establece el margen para los cuatro lados. Es una abreviación para evitar tener que establecer cada
+            lado
+            por separado con las otras propiedades de margen: margin-top, margin-right, margin-bottom y margin-left
+        </p>
+        <p>
+            Ejemplo: margin: 10px;
+        </p>
+        <div class="caja4">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio harum porro voluptates possimus commodi delectus cum ipsa deserunt accusamus! Eius numquam repellendus fugiat perspiciatis assumenda, aspernatur ut dolorem consequuntur culpa.
+        </div>
+    </div>
+    <div>
+        <h2>Selector Universal para Box Model </h2>
+        <p>
+            El asterisco (*) es el selector universal en CSS, con el box model hacen que todos sus selectores mantengan
+            su
+            ancho o alto sin que sean afectados por el padding o border
+        </p>
+        <p>
+            Ejemplo: * {
+            box-sizing: border-box;
+            }
+        </p>
+        
+    </div>
+    <div>
+        <h2>Margin Negativo</h2>
+        <p>
+            El margen se establece en un valor negativo, cuando la caja no sólo no tiene un espacio extra hacia fuera,
+            sino que tampoco tiene su espacio básico y se coloca invadiendo el espacio delimitado por otra caja
+            contigua.
+            margin negativo sería “Cubrir total o parcialmente” con elementos adyacentes.
+        </p>
+        <p>
+            Ejemplo: margin-top: -10px
+        </p>
+
+        <div>
+            <div class="m-primero">
+
+            </div>
+            <div class="m-segundo">
+            
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2>Colapasado de Margenes Verticales</h2>
+        <p>Se da cuando tenemos margenes verticales estan combianados (colapsados) en un solo margen, entonces el mayor
+            absorbera el tamaño del menor.
+        </p>
+        <div>
+            Ejemplo
+            <div class="primero">
+                Primero
+            </div>
+            <div class="segundo">Segundo</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
